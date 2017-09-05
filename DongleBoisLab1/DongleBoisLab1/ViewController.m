@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ImageModel.h"`
+#import "ImageModel.h"
 @interface ViewController () <UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIImageView* imageView;
