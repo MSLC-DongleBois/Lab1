@@ -28,4 +28,14 @@
     _sliderLabel.text = [NSString stringWithFormat:@"%f", _slider.value];
 }
 
+- (IBAction)indexChanged:(UISegmentedControl *)sender {
+    switch (_segmentedControl.selectedSegmentIndex) {
+        case 0:
+            _segmentedLabel.text = @"First";
+        case 1:
+            _segmentedLabel.text = @"Second";
+        default:
+            break;
+    }
+}
 @end
