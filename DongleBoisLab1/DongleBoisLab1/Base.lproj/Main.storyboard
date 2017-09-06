@@ -89,7 +89,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tv-mO-8mr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152.8" y="1512.5937031484259"/>
+            <point key="canvasLocation" x="932" y="1534"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="04C-Xb-PuU">
@@ -189,12 +189,12 @@
         <!--Kitchen Sink-->
         <scene sceneID="09M-n2-zHs">
             <objects>
-                <viewController id="EHr-xQ-CTV" sceneMemberID="viewController">
+                <viewController id="EHr-xQ-CTV" customClass="Ki" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i1u-So-44S"/>
                         <viewControllerLayoutGuide type="bottom" id="hoQ-vz-Sg4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bqC-Gb-usa">
+                    <view key="view" contentMode="scaleToFill" id="bqC-Gb-usa" customClass="KitchenSink">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
