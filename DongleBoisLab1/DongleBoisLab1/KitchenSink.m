@@ -17,6 +17,16 @@
     // Drawing code
 }
 */
+- (IBAction)Touch:(id)sender {
+    _buttonLabel.text = @"Pressed!";
+}
+- (IBAction)slide:(id)sender {
+    _sliderLabel.text = @"Slid!";
+}
+- (IBAction)slider:(id)sender forEvent:(UIEvent *)event {
+    
+    _sliderLabel.text = [NSString stringWithFormat:@"%f", _slider.value];
+}
 
 - (IBAction)indexChanged:(UISegmentedControl *)sender {
     switch (_segmentedControl.selectedSegmentIndex) {
