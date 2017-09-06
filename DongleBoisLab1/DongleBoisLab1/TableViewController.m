@@ -89,7 +89,7 @@
         UITableViewCell* cell = (UITableViewCell*)sender;
         ViewController *vc = [segue destinationViewController];
         
-        vc.imageName = cell.textLabel.text;
+        vc.imageUrl = cell.textLabel.text;
     }
     
 }

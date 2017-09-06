@@ -28,23 +28,37 @@
     return _myImageModel;
 }
 
--(NSString*)imageName {
+-(NSString*)imageUrl {
     
-    if (!_imageName) {
-        _imageName = @"Austin1";
+    if (!_imageUrl) {
+        _imageUrl = @"Austin1";
     }
     
-    return _imageName;
+    return _imageUrl;
 }
 
 -(UIImageView*) imageView {
     
     if (!_imageView) {
-        _imageView = [[UIImageView alloc] initWithImage:[[ImageModel sharedInstance] getImageWithName:self.imageName]];
+        
+        _imageView = [[UIImageView alloc] initWithImage:[[ImageModel sharedInstance] getImageWithUrl:self.imageUrl]];
     }
     
     return _imageView;
 }
+
+//-(UIImageView*) imageView {
+//    
+//    if (!_imageView) {
+//        NSData * urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString: @"https://i.imgur.com/oGctO9a.jpg"]];
+//        
+//        UIImage * imgData = [[UIImage alloc] initWithData:urlData];
+//        
+//        _imageView = [[UIImageView alloc] initWithImage:imgData];
+//    }
+//    
+//    return _imageView;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
