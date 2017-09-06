@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface KitchenSink : UIView
+@property (weak, nonatomic) IBOutlet UILabel *segmentedLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+
+- (IBAction)indexChanged:(UISegmentedControl *)sender;
 
 @end
