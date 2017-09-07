@@ -211,10 +211,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJY-oX-U0h">
-                                <rect key="frame" x="56" y="118" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJY-oX-U0h">
+                                <rect key="frame" x="42" y="118" width="69" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-2O-Vcz">
@@ -286,12 +286,12 @@
                         </constraints>
                         <connections>
                             <outlet property="buttonLabel" destination="ANa-Mx-aOG" id="jbA-Ki-gvq"/>
+                            <outlet property="segmentedControl" destination="pW1-bp-sxe" id="6i8-f8-LVM"/>
+                            <outlet property="segmentedLabel" destination="uJY-oX-U0h" id="Uz1-Sd-S5j"/>
                             <outlet property="slider" destination="s7J-mK-MVH" id="l3C-Tz-bMj"/>
                             <outlet property="sliderLabel" destination="ohe-RE-PtF" id="Wch-vJ-aVq"/>
                             <outlet property="stepperLabel" destination="bhg-2O-Vcz" id="mlI-om-NRX"/>
                             <outlet property="switchLabel" destination="ZzI-WP-jKw" id="lVg-Og-xTj"/>
-                            <outlet property="segmentedControl" destination="pW1-bp-sxe" id="6i8-f8-LVM"/>
-                            <outlet property="segmentedLabel" destination="uJY-oX-U0h" id="Uz1-Sd-S5j"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Kitchen Sink" id="jD2-KP-jKn">
