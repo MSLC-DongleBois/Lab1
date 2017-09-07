@@ -32,8 +32,10 @@
     switch (_segmentedControl.selectedSegmentIndex) {
         case 0:
             _segmentedLabel.text = @"First";
+            break;
         case 1:
             _segmentedLabel.text = @"Second";
+            break;
         default:
             break;
     }
