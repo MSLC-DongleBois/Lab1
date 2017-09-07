@@ -89,7 +89,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tv-mO-8mr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152.8" y="1512.5937031484259"/>
+            <point key="canvasLocation" x="932" y="1534"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="04C-Xb-PuU">
@@ -159,9 +159,13 @@
                                 <rect key="frame" x="337" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressKSButton:" destination="Di6-2y-DWZ" eventType="touchUpInside" id="Fkw-Ec-nNc"/>
+                                </connections>
                             </button>
                             <connections>
-                                <segue destination="EHr-xQ-CTV" kind="show" id="fOu-3h-NeW"/>
+                                <action selector="kitchenSink:" destination="Di6-2y-DWZ" id="wkW-9y-IO4"/>
+                                <segue destination="EHr-xQ-CTV" kind="show" identifier="segueToKitchenSink" id="ZjK-C3-TFe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -189,21 +193,24 @@
         <!--Kitchen Sink-->
         <scene sceneID="09M-n2-zHs">
             <objects>
-                <viewController id="EHr-xQ-CTV" sceneMemberID="viewController">
+                <viewController id="EHr-xQ-CTV" customClass="Ki" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i1u-So-44S"/>
                         <viewControllerLayoutGuide type="bottom" id="hoQ-vz-Sg4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bqC-Gb-usa">
+                    <view key="view" contentMode="scaleToFill" id="bqC-Gb-usa" customClass="KitchenSink">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7o3-QJ-s6H">
                                 <rect key="frame" x="313" y="72" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Touch:" destination="bqC-Gb-usa" eventType="touchUpInside" id="Tug-F7-NgW"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANa-Mx-aOG">
-                                <rect key="frame" x="315" y="110" width="42" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unpressed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANa-Mx-aOG" userLabel="buttonLabel">
+                                <rect key="frame" x="294" y="110" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -232,6 +239,9 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="bqC-Gb-usa" eventType="valueChanged" id="tTd-Oc-efW"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzI-WP-jKw">
                                 <rect key="frame" x="314" y="201" width="42" height="21"/>
@@ -239,14 +249,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="s7J-mK-MVH">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="s7J-mK-MVH">
                                 <rect key="frame" x="128.5" y="247" width="118" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="ha1-88-QSN"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="slider:forEvent:" destination="bqC-Gb-usa" eventType="valueChanged" id="JiJ-eb-txN"/>
+                                </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohe-RE-PtF">
-                                <rect key="frame" x="166.5" y="285" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohe-RE-PtF">
+                                <rect key="frame" x="165.5" y="285" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -275,6 +288,15 @@
                             <constraint firstItem="bhg-2O-Vcz" firstAttribute="top" secondItem="1BP-Cm-7NC" secondAttribute="bottom" constant="8" id="xWB-wA-uw8"/>
                             <constraint firstItem="7o3-QJ-s6H" firstAttribute="top" secondItem="i1u-So-44S" secondAttribute="bottom" constant="8" id="yd9-97-ogV"/>
                         </constraints>
+                        <connections>
+                            <outlet property="buttonLabel" destination="ANa-Mx-aOG" id="jbA-Ki-gvq"/>
+                            <outlet property="segmentedControl" destination="pW1-bp-sxe" id="6i8-f8-LVM"/>
+                            <outlet property="segmentedLabel" destination="uJY-oX-U0h" id="Uz1-Sd-S5j"/>
+                            <outlet property="slider" destination="s7J-mK-MVH" id="l3C-Tz-bMj"/>
+                            <outlet property="sliderLabel" destination="ohe-RE-PtF" id="Wch-vJ-aVq"/>
+                            <outlet property="stepperLabel" destination="bhg-2O-Vcz" id="mlI-om-NRX"/>
+                            <outlet property="switchLabel" destination="ZzI-WP-jKw" id="lVg-Og-xTj"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Kitchen Sink" id="jD2-KP-jKn">
                         <barButtonItem key="backBarButtonItem" title="Back" id="cEx-XN-XPq"/>
