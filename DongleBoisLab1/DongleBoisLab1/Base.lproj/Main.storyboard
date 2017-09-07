@@ -221,17 +221,23 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-2O-Vcz">
-                                <rect key="frame" x="42" y="199" width="42" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-2O-Vcz">
+                                <rect key="frame" x="52.5" y="199" width="21" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1BP-Cm-7NC">
                                 <rect key="frame" x="16" y="162" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperChanged:" destination="bqC-Gb-usa" eventType="valueChanged" id="9UF-5X-ph3"/>
+                                </connections>
                             </stepper>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-gc-NYO">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-gc-NYO">
                                 <rect key="frame" x="310" y="162" width="51" height="31"/>
+                                <connections>
+                                    <action selector="Switch:" destination="bqC-Gb-usa" eventType="valueChanged" id="qvd-3c-bNi"/>
+                                </connections>
                             </switch>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-bp-sxe">
                                 <rect key="frame" x="16" y="72" width="121" height="29"/>
@@ -243,8 +249,8 @@
                                     <action selector="indexChanged:" destination="bqC-Gb-usa" eventType="valueChanged" id="tTd-Oc-efW"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzI-WP-jKw">
-                                <rect key="frame" x="314" y="201" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzI-WP-jKw">
+                                <rect key="frame" x="323.5" y="201" width="23" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -261,7 +267,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohe-RE-PtF">
                                 <rect key="frame" x="165.5" y="285" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.95798198932340795" green="0.26301468221582724" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -294,7 +300,9 @@
                             <outlet property="segmentedLabel" destination="uJY-oX-U0h" id="Uz1-Sd-S5j"/>
                             <outlet property="slider" destination="s7J-mK-MVH" id="l3C-Tz-bMj"/>
                             <outlet property="sliderLabel" destination="ohe-RE-PtF" id="Wch-vJ-aVq"/>
+                            <outlet property="stepperControl" destination="1BP-Cm-7NC" id="dNF-0q-FSj"/>
                             <outlet property="stepperLabel" destination="bhg-2O-Vcz" id="mlI-om-NRX"/>
+                            <outlet property="switchControl" destination="a5M-gc-NYO" id="TXZ-uW-MZj"/>
                             <outlet property="switchLabel" destination="ZzI-WP-jKw" id="lVg-Og-xTj"/>
                         </connections>
                     </view>

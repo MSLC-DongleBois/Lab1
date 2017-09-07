@@ -20,12 +20,30 @@
 - (IBAction)Touch:(id)sender {
     _buttonLabel.text = @"Pressed!";
 }
-- (IBAction)slide:(id)sender {
-    _sliderLabel.text = @"Slid!";
+
+- (IBAction)Switch:(UISwitch *)sender {
+    switch (_switchControl.on) {
+        case NO:
+            _switchLabel.text = @"😔";
+            break;
+        case YES:
+            _switchLabel.text = @"😁";
+            break;
+        default:
+            break;
+    }
+
 }
+
+
 - (IBAction)slider:(id)sender forEvent:(UIEvent *)event {
     
     _sliderLabel.text = [NSString stringWithFormat:@"%f", _slider.value];
+}
+
+- (IBAction)stepperChanged:(UIStepper *)sender {
+    NSInteger val = sender.value;
+    _stepperLabel.text = [NSString stringWithFormat:@"%02lu", val];
 }
 
 - (IBAction)indexChanged:(UISegmentedControl *)sender {

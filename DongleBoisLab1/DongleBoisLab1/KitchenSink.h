@@ -14,10 +14,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *switchLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sliderLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stepperLabel;
+@property (weak, nonatomic) IBOutlet UIStepper *stepperControl;
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @property (weak, nonatomic) IBOutlet UILabel *segmentedLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet UISwitch *switchControl;
 
+- (IBAction)stepperChanged:(UIStepper *)sender;
 - (IBAction)indexChanged:(UISegmentedControl *)sender;
 
 @end
