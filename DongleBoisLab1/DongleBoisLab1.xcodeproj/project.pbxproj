@@ -20,7 +20,6 @@
 		D94738E31F5F3C3A003D8E99 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738E21F5F3C3A003D8E99 /* CollectionViewController.m */; };
 		D94738E61F5F3C68003D8E99 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738E51F5F3C68003D8E99 /* CollectionViewCell.m */; };
 		D94738E91F5F3CA4003D8E99 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738E81F5F3CA4003D8E99 /* TableViewController.m */; };
-		D9E55D9C1F61107900E111D0 /* ColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E55D9B1F61107900E111D0 /* ColorPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +66,6 @@
 		D94738E51F5F3C68003D8E99 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		D94738E71F5F3CA4003D8E99 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		D94738E81F5F3CA4003D8E99 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		D9E55D9A1F61107900E111D0 /* ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPicker.h; sourceTree = "<group>"; };
-		D9E55D9B1F61107900E111D0 /* ColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +131,6 @@
 				D94738B41F5F3B28003D8E99 /* Main.storyboard */,
 				68F701361F60B68D00C5D0A3 /* KitchenSink.h */,
 				68F701371F60B68D00C5D0A3 /* KitchenSink.m */,
-				D9E55D9A1F61107900E111D0 /* ColorPicker.h */,
-				D9E55D9B1F61107900E111D0 /* ColorPicker.m */,
 				D94738B71F5F3B28003D8E99 /* Assets.xcassets */,
 				D94738B91F5F3B28003D8E99 /* LaunchScreen.storyboard */,
 				D94738BC1F5F3B28003D8E99 /* Info.plist */,
@@ -307,7 +302,6 @@
 				D94738E61F5F3C68003D8E99 /* CollectionViewCell.m in Sources */,
 				D94738B31F5F3B28003D8E99 /* ViewController.m in Sources */,
 				D94738B01F5F3B28003D8E99 /* AppDelegate.m in Sources */,
-				D9E55D9C1F61107900E111D0 /* ColorPicker.m in Sources */,
 				68F701381F60B68D00C5D0A3 /* KitchenSink.m in Sources */,
 				D94738AD1F5F3B28003D8E99 /* main.m in Sources */,
 				D94738E31F5F3C3A003D8E99 /* CollectionViewController.m in Sources */,
