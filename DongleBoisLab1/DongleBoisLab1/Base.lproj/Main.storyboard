@@ -91,7 +91,7 @@
             </objects>
             <point key="canvasLocation" x="932" y="1534"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Main Menu-->
         <scene sceneID="04C-Xb-PuU">
             <objects>
                 <tableViewController id="Di6-2y-DWZ" customClass="TableViewController" sceneMemberID="viewController">
@@ -147,28 +147,33 @@
                                     <segue destination="YhD-Zs-3O5" kind="show" id="rlU-41-q26"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="KitchenSinkCell" textLabel="teO-Av-kv4" style="IBUITableViewCellStyleDefault" id="F1P-fr-nRx">
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F1P-fr-nRx" id="TaZ-li-FBn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="teO-Av-kv4">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="EHr-xQ-CTV" kind="show" id="Dd9-5w-ish"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Di6-2y-DWZ" id="yld-yW-MFX"/>
                             <outlet property="delegate" destination="Di6-2y-DWZ" id="TVc-4b-Hsw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="N5q-Xw-THk">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="QvA-w7-QRA">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="JPQ-he-prS">
-                                <rect key="frame" x="337" y="11" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="pressKSButton:" destination="Di6-2y-DWZ" eventType="touchUpInside" id="Fkw-Ec-nNc"/>
-                                </connections>
-                            </button>
-                            <connections>
-                                <action selector="kitchenSink:" destination="Di6-2y-DWZ" id="wkW-9y-IO4"/>
-                                <segue destination="EHr-xQ-CTV" kind="show" identifier="segueToKitchenSink" id="ZjK-C3-TFe"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Main Menu" id="N5q-Xw-THk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKW-Hh-SSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,7 +195,7 @@
             </objects>
             <point key="canvasLocation" x="-244" y="780"/>
         </scene>
-        <!--Kitchen Sink-->
+        <!--Ki-->
         <scene sceneID="09M-n2-zHs">
             <objects>
                 <viewController id="EHr-xQ-CTV" customClass="Ki" sceneMemberID="viewController">
@@ -306,10 +311,6 @@
                             <outlet property="switchLabel" destination="ZzI-WP-jKw" id="lVg-Og-xTj"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Kitchen Sink" id="jD2-KP-jKn">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="cEx-XN-XPq"/>
-                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="2P7-fi-suB"/>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0v-wp-rne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

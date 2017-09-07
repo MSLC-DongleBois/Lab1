@@ -48,7 +48,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -74,7 +74,7 @@
         cell.detailTextLabel.text = @"more";
     }
     
-    else {
+    else if (indexPath.section == 1){
         cell = [tableView dequeueReusableCellWithIdentifier:@"CollectionCell" forIndexPath:indexPath];
         
         // Configure the cell...
@@ -82,6 +82,13 @@
         cell.detailTextLabel.text = @"more";
     }
     
+    else if (indexPath.section == 2){
+        cell = [tableView dequeueReusableCellWithIdentifier:@"KitchenSinkCell" forIndexPath:indexPath];
+        
+        // Configure the cell...
+        cell.textLabel.text = @"Kitchen Sink";
+        cell.detailTextLabel.text = @"more";
+    }
     
     return cell;
 }
