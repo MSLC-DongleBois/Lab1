@@ -26,6 +26,12 @@
     
     return _myImageModel;
 }
+- (IBAction)kitchenSink:(id)sender {
+    
+}
+- (IBAction)pressKSButton:(id)sender {
+    [self performSegueWithIdentifier:@"segueToKitchenSink" sender:sender];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
