@@ -159,9 +159,13 @@
                                 <rect key="frame" x="337" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressKSButton:" destination="Di6-2y-DWZ" eventType="touchUpInside" id="Fkw-Ec-nNc"/>
+                                </connections>
                             </button>
                             <connections>
-                                <segue destination="EHr-xQ-CTV" kind="show" id="fOu-3h-NeW"/>
+                                <action selector="kitchenSink:" destination="Di6-2y-DWZ" id="wkW-9y-IO4"/>
+                                <segue destination="EHr-xQ-CTV" kind="show" identifier="segueToKitchenSink" id="ZjK-C3-TFe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -286,12 +290,12 @@
                         </constraints>
                         <connections>
                             <outlet property="buttonLabel" destination="ANa-Mx-aOG" id="jbA-Ki-gvq"/>
+                            <outlet property="segmentedControl" destination="pW1-bp-sxe" id="6i8-f8-LVM"/>
+                            <outlet property="segmentedLabel" destination="uJY-oX-U0h" id="Uz1-Sd-S5j"/>
                             <outlet property="slider" destination="s7J-mK-MVH" id="l3C-Tz-bMj"/>
                             <outlet property="sliderLabel" destination="ohe-RE-PtF" id="Wch-vJ-aVq"/>
                             <outlet property="stepperLabel" destination="bhg-2O-Vcz" id="mlI-om-NRX"/>
                             <outlet property="switchLabel" destination="ZzI-WP-jKw" id="lVg-Og-xTj"/>
-                            <outlet property="segmentedControl" destination="pW1-bp-sxe" id="6i8-f8-LVM"/>
-                            <outlet property="segmentedLabel" destination="uJY-oX-U0h" id="Uz1-Sd-S5j"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Kitchen Sink" id="jD2-KP-jKn">
