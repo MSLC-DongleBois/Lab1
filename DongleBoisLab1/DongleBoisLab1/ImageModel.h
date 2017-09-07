@@ -15,7 +15,7 @@
 
 +(ImageModel*) sharedInstance;
 
--(UIImage*)getImageWithName:(NSString*)name;
+-(UIImage*)getImageWithUrl:(NSString*)Url;
 
 @end
 

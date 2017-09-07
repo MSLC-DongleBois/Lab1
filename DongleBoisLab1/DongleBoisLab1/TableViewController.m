@@ -26,6 +26,12 @@
     
     return _myImageModel;
 }
+- (IBAction)kitchenSink:(id)sender {
+    
+}
+- (IBAction)pressKSButton:(id)sender {
+    [self performSegueWithIdentifier:@"segueToKitchenSink" sender:sender];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -89,7 +95,7 @@
         UITableViewCell* cell = (UITableViewCell*)sender;
         ViewController *vc = [segue destinationViewController];
         
-        vc.imageName = cell.textLabel.text;
+        vc.imageUrl = cell.textLabel.text;
     }
     
 }

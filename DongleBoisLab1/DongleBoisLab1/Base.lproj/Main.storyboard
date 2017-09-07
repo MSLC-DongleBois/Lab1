@@ -159,9 +159,13 @@
                                 <rect key="frame" x="337" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressKSButton:" destination="Di6-2y-DWZ" eventType="touchUpInside" id="Fkw-Ec-nNc"/>
+                                </connections>
                             </button>
                             <connections>
-                                <segue destination="EHr-xQ-CTV" kind="show" id="fOu-3h-NeW"/>
+                                <action selector="kitchenSink:" destination="Di6-2y-DWZ" id="wkW-9y-IO4"/>
+                                <segue destination="EHr-xQ-CTV" kind="show" identifier="segueToKitchenSink" id="ZjK-C3-TFe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -14,7 +14,7 @@
 -(NSArray*) imageNames{
     
     if (!_imageNames) {
-        _imageNames = @[@"Austin1", @"Austin2", @"Austin3"];
+        _imageNames = @[@"https://i.imgur.com/oGctO9a.jpg", @"https://i.imgur.com/Fen6QuJ.jpg", @"https://i.imgur.com/Bap1zTV.jpg"];
     }
     
     return _imageNames;
@@ -32,9 +32,12 @@
     return _sharedInstance;
 }
 
--(UIImage*)getImageWithName:(NSString *)name {
+-(UIImage*)getImageWithUrl:(NSString *)Url {
+    NSData * urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString: Url]];
+    
     UIImage* image = nil;
-    image = [UIImage imageNamed: name];
+    
+    image = [[UIImage alloc] initWithData:urlData];
     
     return image;
 }
