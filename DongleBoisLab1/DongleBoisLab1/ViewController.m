@@ -47,18 +47,6 @@
     return _imageView;
 }
 
-//-(UIImageView*) imageView {
-//    
-//    if (!_imageView) {
-//        NSData * urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString: @"https://i.imgur.com/oGctO9a.jpg"]];
-//        
-//        UIImage * imgData = [[UIImage alloc] initWithData:urlData];
-//        
-//        _imageView = [[UIImageView alloc] initWithImage:imgData];
-//    }
-//    
-//    return _imageView;
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
