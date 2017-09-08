@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "ImageModel.h"
+#import "ModalViewController.h"
+
 @interface ViewController () <UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIImageView* imageView;
@@ -56,6 +58,14 @@
     self.scrollView.contentSize = self.imageView.image.size;
     self.scrollView.minimumZoomScale = 0.1;
     self.scrollView.delegate = self;
+}
+
+-(void)showModal:(id)sender {
+    ModalViewController *modalView = [[ModalViewController alloc] init];
+    
+    modalView.modalPresentationStyle = UIModalPresentationFormSheet;
+    modalView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:modalView animated:YES completion:nil];
 }
 
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {

@@ -24,6 +24,7 @@
 		D94738E91F5F3CA4003D8E99 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738E81F5F3CA4003D8E99 /* TableViewController.m */; };
 		D9523F841F63273400BBF0CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9523F831F63273400BBF0CA /* AVFoundation.framework */; };
 		D9523F861F63275000BBF0CA /* Darude_Sandstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9523F851F63275000BBF0CA /* Darude_Sandstorm.mp3 */; };
+		D9523F891F6339A000BBF0CA /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9523F881F6339A000BBF0CA /* ModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		D94738E81F5F3CA4003D8E99 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		D9523F831F63273400BBF0CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D9523F851F63275000BBF0CA /* Darude_Sandstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Darude_Sandstorm.mp3; sourceTree = "<group>"; };
+		D9523F871F6339A000BBF0CA /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		D9523F881F6339A000BBF0CA /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				D94738E71F5F3CA4003D8E99 /* TableViewController.h */,
 				D94738E81F5F3CA4003D8E99 /* TableViewController.m */,
 				D94738B41F5F3B28003D8E99 /* Main.storyboard */,
+				D9523F871F6339A000BBF0CA /* ModalViewController.h */,
+				D9523F881F6339A000BBF0CA /* ModalViewController.m */,
 				68F701361F60B68D00C5D0A3 /* KitchenSink.h */,
 				68F701371F60B68D00C5D0A3 /* KitchenSink.m */,
 				0277196B1F630C24000DA779 /* PickerTimerViewController.h */,
@@ -330,6 +335,7 @@
 				D94738B01F5F3B28003D8E99 /* AppDelegate.m in Sources */,
 				683F26F01F6308ED00E5ED8D /* TimerViewController.m in Sources */,
 				68F701381F60B68D00C5D0A3 /* KitchenSink.m in Sources */,
+				D9523F891F6339A000BBF0CA /* ModalViewController.m in Sources */,
 				D94738AD1F5F3B28003D8E99 /* main.m in Sources */,
 				D94738E31F5F3C3A003D8E99 /* CollectionViewController.m in Sources */,
 				D94738E91F5F3CA4003D8E99 /* TableViewController.m in Sources */,
