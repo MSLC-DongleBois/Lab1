@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KitchenSink : UIView
+@interface KitchenSink : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *buttonLabel;
 @property (weak, nonatomic) IBOutlet UILabel *switchLabel;

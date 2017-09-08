@@ -18,16 +18,16 @@
 }
 */
 - (IBAction)Touch:(id)sender {
-    _buttonLabel.text = @"Pressed!";
+    self.buttonLabel.text = @"Pressed!";
 }
 
 - (IBAction)Switch:(UISwitch *)sender {
-    switch (_switchControl.on) {
+    switch (self.switchControl.on) {
         case NO:
-            _switchLabel.text = @"😔";
+            self.switchLabel.text = @"😔";
             break;
         case YES:
-            _switchLabel.text = @"😁";
+            self.switchLabel.text = @"😁";
             break;
         default:
             break;
@@ -38,21 +38,21 @@
 
 - (IBAction)slider:(id)sender forEvent:(UIEvent *)event {
     
-    _sliderLabel.text = [NSString stringWithFormat:@"%f", _slider.value];
+    self.sliderLabel.text = [NSString stringWithFormat:@"%f", self.slider.value];
 }
 
 - (IBAction)stepperChanged:(UIStepper *)sender {
     NSInteger val = sender.value;
-    _stepperLabel.text = [NSString stringWithFormat:@"%02lu", val];
+    self.stepperLabel.text = [NSString stringWithFormat:@"%02lu", val];
 }
 
 - (IBAction)indexChanged:(UISegmentedControl *)sender {
-    switch (_segmentedControl.selectedSegmentIndex) {
+    switch (self.segmentedControl.selectedSegmentIndex) {
         case 0:
-            _segmentedLabel.text = @"First";
+            self.segmentedLabel.text = @"First";
             break;
         case 1:
-            _segmentedLabel.text = @"Second";
+            self.segmentedLabel.text = @"Second";
             break;
         default:
             break;

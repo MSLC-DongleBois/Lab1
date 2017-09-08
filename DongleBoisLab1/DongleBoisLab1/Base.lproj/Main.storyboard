@@ -195,15 +195,15 @@
             </objects>
             <point key="canvasLocation" x="-244" y="780"/>
         </scene>
-        <!--Ki-->
+        <!--Kitchen Sink-->
         <scene sceneID="09M-n2-zHs">
             <objects>
-                <viewController id="EHr-xQ-CTV" customClass="Ki" sceneMemberID="viewController">
+                <viewController id="EHr-xQ-CTV" customClass="KitchenSink" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i1u-So-44S"/>
                         <viewControllerLayoutGuide type="bottom" id="hoQ-vz-Sg4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bqC-Gb-usa" customClass="KitchenSink">
+                    <view key="view" contentMode="scaleToFill" id="bqC-Gb-usa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -211,37 +211,37 @@
                                 <rect key="frame" x="313" y="72" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="Touch:" destination="bqC-Gb-usa" eventType="touchUpInside" id="Tug-F7-NgW"/>
+                                    <action selector="Touch:" destination="EHr-xQ-CTV" eventType="touchUpInside" id="6nn-Uc-1YX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unpressed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANa-Mx-aOG" userLabel="buttonLabel">
                                 <rect key="frame" x="294" y="110" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJY-oX-U0h">
                                 <rect key="frame" x="42" y="118" width="69" height="21"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-2O-Vcz">
                                 <rect key="frame" x="52.5" y="199" width="21" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1BP-Cm-7NC">
                                 <rect key="frame" x="16" y="162" width="94" height="29"/>
                                 <connections>
-                                    <action selector="stepperChanged:" destination="bqC-Gb-usa" eventType="valueChanged" id="9UF-5X-ph3"/>
+                                    <action selector="stepperChanged:" destination="EHr-xQ-CTV" eventType="valueChanged" id="A1C-Ud-r8M"/>
                                 </connections>
                             </stepper>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-gc-NYO">
                                 <rect key="frame" x="310" y="162" width="51" height="31"/>
                                 <connections>
-                                    <action selector="Switch:" destination="bqC-Gb-usa" eventType="valueChanged" id="qvd-3c-bNi"/>
+                                    <action selector="Switch:" destination="EHr-xQ-CTV" eventType="valueChanged" id="k72-jw-spz"/>
                                 </connections>
                             </switch>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-bp-sxe">
@@ -251,7 +251,7 @@
                                     <segment title="Second"/>
                                 </segments>
                                 <connections>
-                                    <action selector="indexChanged:" destination="bqC-Gb-usa" eventType="valueChanged" id="tTd-Oc-efW"/>
+                                    <action selector="indexChanged:" destination="EHr-xQ-CTV" eventType="valueChanged" id="cB3-bd-aXC"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzI-WP-jKw">
@@ -266,13 +266,13 @@
                                     <constraint firstAttribute="width" constant="114" id="ha1-88-QSN"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="slider:forEvent:" destination="bqC-Gb-usa" eventType="valueChanged" id="JiJ-eb-txN"/>
+                                    <action selector="slider:forEvent:" destination="EHr-xQ-CTV" eventType="valueChanged" id="udv-JE-Hee"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohe-RE-PtF">
                                 <rect key="frame" x="165.5" y="285" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.95798198932340795" green="0.26301468221582724" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -299,18 +299,20 @@
                             <constraint firstItem="bhg-2O-Vcz" firstAttribute="top" secondItem="1BP-Cm-7NC" secondAttribute="bottom" constant="8" id="xWB-wA-uw8"/>
                             <constraint firstItem="7o3-QJ-s6H" firstAttribute="top" secondItem="i1u-So-44S" secondAttribute="bottom" constant="8" id="yd9-97-ogV"/>
                         </constraints>
-                        <connections>
-                            <outlet property="buttonLabel" destination="ANa-Mx-aOG" id="jbA-Ki-gvq"/>
-                            <outlet property="segmentedControl" destination="pW1-bp-sxe" id="6i8-f8-LVM"/>
-                            <outlet property="segmentedLabel" destination="uJY-oX-U0h" id="Uz1-Sd-S5j"/>
-                            <outlet property="slider" destination="s7J-mK-MVH" id="l3C-Tz-bMj"/>
-                            <outlet property="sliderLabel" destination="ohe-RE-PtF" id="Wch-vJ-aVq"/>
-                            <outlet property="stepperControl" destination="1BP-Cm-7NC" id="dNF-0q-FSj"/>
-                            <outlet property="stepperLabel" destination="bhg-2O-Vcz" id="mlI-om-NRX"/>
-                            <outlet property="switchControl" destination="a5M-gc-NYO" id="TXZ-uW-MZj"/>
-                            <outlet property="switchLabel" destination="ZzI-WP-jKw" id="lVg-Og-xTj"/>
-                        </connections>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonLabel" destination="ANa-Mx-aOG" id="ZC0-a7-86z"/>
+                        <outlet property="segmentedControl" destination="pW1-bp-sxe" id="BKP-RM-4Ua"/>
+                        <outlet property="segmentedLabel" destination="uJY-oX-U0h" id="8u7-cH-mAI"/>
+                        <outlet property="slider" destination="s7J-mK-MVH" id="oEq-6u-0PS"/>
+                        <outlet property="sliderLabel" destination="ohe-RE-PtF" id="1xS-Xo-Rtp"/>
+                        <outlet property="stepperControl" destination="1BP-Cm-7NC" id="w03-RV-WJO"/>
+                        <outlet property="stepperLabel" destination="bhg-2O-Vcz" id="FVI-Qa-SwU"/>
+                        <outlet property="switchControl" destination="a5M-gc-NYO" id="x1k-NQ-D7m"/>
+                        <outlet property="switchLabel" destination="ZzI-WP-jKw" id="vbf-gL-uC1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0v-wp-rne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

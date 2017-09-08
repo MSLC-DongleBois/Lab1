@@ -26,6 +26,7 @@
     
     return _myImageModel;
 }
+
 - (IBAction)kitchenSink:(id)sender {
     
 }
@@ -41,6 +42,14 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    spinner.center = CGPointMake(160, 240);
+    //spinner.tag = 12;
+    [self.view addSubview:spinner];
+    
+    [self.myImageModel makeRequest: self.tableView];
+    
 }
 
 
