@@ -14,7 +14,31 @@
 -(NSArray*) imageNames{
     
     if (!_imageNames) {
-        _imageNames = @[@"Austin1", @"Austin2", @"Austin3"];
+        // String which will contain http response body
+        __block NSString *responseString;
+        
+        // Prepare http get request
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+        [request setURL:[NSURL URLWithString:@"https://api.kellenschmidt.com/mslc-urls"]];
+        [request setHTTPMethod:@"GET"];
+        
+        // Make http get request
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            responseString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+            
+            // Parse http response body
+            NSData* responseData = [responseString dataUsingEncoding:NSUTF8StringEncoding];
+            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+            NSArray *fetchedArr = json[@"data"];
+            NSArray *imageUrls = [fetchedArr valueForKey:@"url"]; // Returns an array of image urls
+
+            _imageNames = imageUrls;
+            
+            NSLog(@"The content of arry is %@", _imageNames);
+
+        }] resume];
+        
     }
     
     return _imageNames;
