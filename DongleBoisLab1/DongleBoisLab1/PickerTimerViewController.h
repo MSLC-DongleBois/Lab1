@@ -10,7 +10,7 @@
 
 @interface PickerTimerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (weak, nonatomic) IBOutlet UIPickerView *Picker;
-@property (weak, nonatomic) IBOutlet UILabel *pickerLabel;
 @property (strong, nonatomic)NSArray *pickerData;
+@property (weak, nonatomic) IBOutlet UILabel *pickerLabel;
 
 @end

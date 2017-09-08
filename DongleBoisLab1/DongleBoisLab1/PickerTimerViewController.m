@@ -44,7 +44,6 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    //NSString *resultString = _dataSourceArray[row];
     
     _pickerLabel.text = _pickerData[row];
 }

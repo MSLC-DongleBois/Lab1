@@ -57,7 +57,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -103,6 +103,14 @@
         
         // Configure the cell...
         cell.textLabel.text = @"Picker";
+        cell.detailTextLabel.text = @"more";
+    }
+    
+    else if (indexPath.section == 4){
+        cell = [tableView dequeueReusableCellWithIdentifier:@"TimerCell" forIndexPath:indexPath];
+        
+        // Configure the cell...
+        cell.textLabel.text = @"Timer";
         cell.detailTextLabel.text = @"more";
     }
     

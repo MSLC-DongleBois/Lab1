@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0277196D1F630C24000DA779 /* PickerTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0277196C1F630C24000DA779 /* PickerTimerViewController.m */; };
+		683F26F01F6308ED00E5ED8D /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 683F26EF1F6308ED00E5ED8D /* TimerViewController.m */; };
 		68F701381F60B68D00C5D0A3 /* KitchenSink.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F701371F60B68D00C5D0A3 /* KitchenSink.m */; };
 		D94738AD1F5F3B28003D8E99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738AC1F5F3B28003D8E99 /* main.m */; };
 		D94738B01F5F3B28003D8E99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738AF1F5F3B28003D8E99 /* AppDelegate.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		0277196B1F630C24000DA779 /* PickerTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTimerViewController.h; sourceTree = "<group>"; };
 		0277196C1F630C24000DA779 /* PickerTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTimerViewController.m; sourceTree = "<group>"; };
+		683F26EE1F6308ED00E5ED8D /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		683F26EF1F6308ED00E5ED8D /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		68F701361F60B68D00C5D0A3 /* KitchenSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenSink.h; sourceTree = "<group>"; };
 		68F701371F60B68D00C5D0A3 /* KitchenSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenSink.m; sourceTree = "<group>"; };
 		D94738A81F5F3B28003D8E99 /* DongleBoisLab1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DongleBoisLab1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +143,8 @@
 				D94738B91F5F3B28003D8E99 /* LaunchScreen.storyboard */,
 				D94738BC1F5F3B28003D8E99 /* Info.plist */,
 				D94738AB1F5F3B28003D8E99 /* Supporting Files */,
+				683F26EE1F6308ED00E5ED8D /* TimerViewController.h */,
+				683F26EF1F6308ED00E5ED8D /* TimerViewController.m */,
 			);
 			path = DongleBoisLab1;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				D94738E61F5F3C68003D8E99 /* CollectionViewCell.m in Sources */,
 				D94738B31F5F3B28003D8E99 /* ViewController.m in Sources */,
 				D94738B01F5F3B28003D8E99 /* AppDelegate.m in Sources */,
+				683F26F01F6308ED00E5ED8D /* TimerViewController.m in Sources */,
 				68F701381F60B68D00C5D0A3 /* KitchenSink.m in Sources */,
 				D94738AD1F5F3B28003D8E99 /* main.m in Sources */,
 				D94738E31F5F3C3A003D8E99 /* CollectionViewController.m in Sources */,
