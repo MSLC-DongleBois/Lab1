@@ -43,11 +43,6 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    spinner.center = CGPointMake(160, 240);
-    //spinner.tag = 12;
-    [self.view addSubview:spinner];
-    
     [self.myImageModel makeRequest: self.tableView];
     
 }
@@ -80,7 +75,7 @@
         
         // Configure the cell...
         cell.textLabel.text = self.myImageModel.imageNames[indexPath.row];
-        cell.detailTextLabel.text = @"more";
+        cell.detailTextLabel.text = @"view";
     }
     
     else if (indexPath.section == 1){

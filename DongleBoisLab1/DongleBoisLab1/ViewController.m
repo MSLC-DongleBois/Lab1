@@ -31,7 +31,7 @@
 -(NSString*)imageUrl {
     
     if (!_imageUrl) {
-        _imageUrl = @"Austin1";
+        _imageUrl = @"https://i.imgur.com/7kZ562z.jpg";
     }
     
     return _imageUrl;

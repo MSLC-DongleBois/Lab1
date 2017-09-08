@@ -40,10 +40,8 @@
         NSArray *fetchedArr = json[@"data"];
         NSArray *imageUrls = [fetchedArr valueForKey:@"url"]; // Returns an array of image urls
         
-        _imageNames = imageUrls;
-        
-        NSLog(@"The content of arry is %@", _imageNames);
-        
+        self.imageNames = imageUrls;
+            
         dispatch_async(dispatch_get_main_queue(), ^{
             [picture reloadData];
         });
