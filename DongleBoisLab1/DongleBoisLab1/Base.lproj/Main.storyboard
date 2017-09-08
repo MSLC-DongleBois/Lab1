@@ -89,7 +89,42 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tv-mO-8mr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="1534"/>
+            <point key="canvasLocation" x="609" y="1702"/>
+        </scene>
+        <!--Picker & Timer-->
+        <scene sceneID="t0O-OX-5Vx">
+            <objects>
+                <viewController title="Picker &amp; Timer" id="E6w-lN-bQf" customClass="PickerTimerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fvt-H2-gEr"/>
+                        <viewControllerLayoutGuide type="bottom" id="ie1-p7-73H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i4k-Ua-ZUk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKH-nG-n5P">
+                                <rect key="frame" x="0.0" y="328" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D06-Lq-11k">
+                                <rect key="frame" x="166" y="179" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Picker" destination="mKH-nG-n5P" id="5xy-al-zj9"/>
+                        <outlet property="TimerLabel" destination="D06-Lq-11k" id="Ow9-n0-s34"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICv-ee-MCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="1802"/>
         </scene>
         <!--Main Menu-->
         <scene sceneID="04C-Xb-PuU">
@@ -167,6 +202,26 @@
                                     <segue destination="EHr-xQ-CTV" kind="show" id="Dd9-5w-ish"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickerCell" textLabel="RFh-2V-sR1" style="IBUITableViewCellStyleDefault" id="DQS-vA-awx">
+                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DQS-vA-awx" id="baB-Z6-jXm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RFh-2V-sR1">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="E6w-lN-bQf" kind="show" id="d4e-m2-EM1"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Di6-2y-DWZ" id="yld-yW-MFX"/>
@@ -198,7 +253,7 @@
         <!--Kitchen Sink-->
         <scene sceneID="09M-n2-zHs">
             <objects>
-                <viewController id="EHr-xQ-CTV" customClass="KitchenSink" sceneMemberID="viewController">
+                <viewController title="Kitchen Sink" id="EHr-xQ-CTV" customClass="KitchenSink" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i1u-So-44S"/>
                         <viewControllerLayoutGuide type="bottom" id="hoQ-vz-Sg4"/>
