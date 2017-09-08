@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68F701381F60B68D00C5D0A3 /* KitchenSink.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F701371F60B68D00C5D0A3 /* KitchenSink.m */; };
 		D94738AD1F5F3B28003D8E99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738AC1F5F3B28003D8E99 /* main.m */; };
 		D94738B01F5F3B28003D8E99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738AF1F5F3B28003D8E99 /* AppDelegate.m */; };
 		D94738B31F5F3B28003D8E99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738B21F5F3B28003D8E99 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68F701361F60B68D00C5D0A3 /* KitchenSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenSink.h; sourceTree = "<group>"; };
+		68F701371F60B68D00C5D0A3 /* KitchenSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenSink.m; sourceTree = "<group>"; };
 		D94738A81F5F3B28003D8E99 /* DongleBoisLab1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DongleBoisLab1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94738AC1F5F3B28003D8E99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D94738AE1F5F3B28003D8E99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				D94738E71F5F3CA4003D8E99 /* TableViewController.h */,
 				D94738E81F5F3CA4003D8E99 /* TableViewController.m */,
 				D94738B41F5F3B28003D8E99 /* Main.storyboard */,
+				68F701361F60B68D00C5D0A3 /* KitchenSink.h */,
+				68F701371F60B68D00C5D0A3 /* KitchenSink.m */,
 				D94738B71F5F3B28003D8E99 /* Assets.xcassets */,
 				D94738B91F5F3B28003D8E99 /* LaunchScreen.storyboard */,
 				D94738BC1F5F3B28003D8E99 /* Info.plist */,
@@ -297,6 +302,7 @@
 				D94738E61F5F3C68003D8E99 /* CollectionViewCell.m in Sources */,
 				D94738B31F5F3B28003D8E99 /* ViewController.m in Sources */,
 				D94738B01F5F3B28003D8E99 /* AppDelegate.m in Sources */,
+				68F701381F60B68D00C5D0A3 /* KitchenSink.m in Sources */,
 				D94738AD1F5F3B28003D8E99 /* main.m in Sources */,
 				D94738E31F5F3C3A003D8E99 /* CollectionViewController.m in Sources */,
 				D94738E91F5F3CA4003D8E99 /* TableViewController.m in Sources */,

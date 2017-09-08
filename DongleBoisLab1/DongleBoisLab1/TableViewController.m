@@ -27,6 +27,13 @@
     return _myImageModel;
 }
 
+- (IBAction)kitchenSink:(id)sender {
+    
+}
+- (IBAction)pressKSButton:(id)sender {
+    [self performSegueWithIdentifier:@"segueToKitchenSink" sender:sender];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -35,6 +42,14 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    spinner.center = CGPointMake(160, 240);
+    //spinner.tag = 12;
+    [self.view addSubview:spinner];
+    
+    [self.myImageModel makeRequest: self.tableView];
+    
 }
 
 
@@ -42,7 +57,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -68,7 +83,7 @@
         cell.detailTextLabel.text = @"more";
     }
     
-    else {
+    else if (indexPath.section == 1){
         cell = [tableView dequeueReusableCellWithIdentifier:@"CollectionCell" forIndexPath:indexPath];
         
         // Configure the cell...
@@ -76,6 +91,13 @@
         cell.detailTextLabel.text = @"more";
     }
     
+    else if (indexPath.section == 2){
+        cell = [tableView dequeueReusableCellWithIdentifier:@"KitchenSinkCell" forIndexPath:indexPath];
+        
+        // Configure the cell...
+        cell.textLabel.text = @"Kitchen Sink";
+        cell.detailTextLabel.text = @"more";
+    }
     
     return cell;
 }
@@ -89,7 +111,7 @@
         UITableViewCell* cell = (UITableViewCell*)sender;
         ViewController *vc = [segue destinationViewController];
         
-        vc.imageName = cell.textLabel.text;
+        vc.imageUrl = cell.textLabel.text;
     }
     
 }
