@@ -42,6 +42,24 @@
             </objects>
             <point key="canvasLocation" x="1726" y="1001"/>
         </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="q4b-Vp-0m3">
+            <objects>
+                <viewController id="SUl-zB-VpE" customClass="TimerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ceM-hk-jcT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ohi-MY-yw6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B1g-UV-aTj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxE-rl-Ypu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2444" y="675"/>
+        </scene>
         <!--Collection View Controller-->
         <scene sceneID="OzD-Ml-a5T">
             <objects>
@@ -165,6 +183,26 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="EHr-xQ-CTV" kind="show" id="Dd9-5w-ish"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimerCell" textLabel="TW2-Vf-hsi" style="IBUITableViewCellStyleDefault" id="Ydp-MP-emB">
+                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ydp-MP-emB" id="xCn-tv-4FG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TW2-Vf-hsi">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="SUl-zB-VpE" kind="show" id="MZN-gc-mU4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
