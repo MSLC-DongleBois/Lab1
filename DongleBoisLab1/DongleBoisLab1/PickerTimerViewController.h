@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PickerTimerViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *TimerLabel;
+@interface PickerTimerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (weak, nonatomic) IBOutlet UIPickerView *Picker;
+@property (weak, nonatomic) IBOutlet UILabel *pickerLabel;
+@property (strong, nonatomic)NSArray *pickerData;
 
 @end

@@ -16,12 +16,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _pickerData = @[@"Mobile", @"Sensing", @"And", @"Learning"];
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)numberOfComponentsInPickerView: (UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+
+{
+    return  _pickerData.count;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return _pickerData[row];
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    //NSString *resultString = _dataSourceArray[row];
+    
+    _pickerLabel.text = _pickerData[row];
 }
 
 /*

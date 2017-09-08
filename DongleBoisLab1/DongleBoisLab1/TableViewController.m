@@ -102,7 +102,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"PickerCell" forIndexPath:indexPath];
         
         // Configure the cell...
-        cell.textLabel.text = @"Picker and Timer";
+        cell.textLabel.text = @"Picker";
         cell.detailTextLabel.text = @"more";
     }
     
