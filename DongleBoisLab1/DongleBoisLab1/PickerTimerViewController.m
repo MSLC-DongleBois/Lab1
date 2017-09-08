@@ -14,10 +14,18 @@
 
 @implementation PickerTimerViewController
 
+-(NSArray*) pickerData{
+    
+    if (!_pickerData) {
+        _pickerData = @[@"Mobile", @"Sensing", @"And", @"Learning"];
+    }
+    
+    return _pickerData;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _pickerData = @[@"Mobile", @"Sensing", @"And", @"Learning"];
     // Do any additional setup after loading the view.
 }
 
@@ -34,18 +42,18 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 
 {
-    return  _pickerData.count;
+    return  self.pickerData.count;
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return _pickerData[row];
+    return self.pickerData[row];
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     
-    _pickerLabel.text = _pickerData[row];
+    _pickerLabel.text = self.pickerData[row];
 }
 
 /*

@@ -22,6 +22,8 @@
 		D94738E31F5F3C3A003D8E99 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738E21F5F3C3A003D8E99 /* CollectionViewController.m */; };
 		D94738E61F5F3C68003D8E99 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738E51F5F3C68003D8E99 /* CollectionViewCell.m */; };
 		D94738E91F5F3CA4003D8E99 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94738E81F5F3CA4003D8E99 /* TableViewController.m */; };
+		D9523F841F63273400BBF0CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9523F831F63273400BBF0CA /* AVFoundation.framework */; };
+		D9523F861F63275000BBF0CA /* Darude_Sandstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9523F851F63275000BBF0CA /* Darude_Sandstorm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		D94738E51F5F3C68003D8E99 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		D94738E71F5F3CA4003D8E99 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		D94738E81F5F3CA4003D8E99 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		D9523F831F63273400BBF0CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9523F851F63275000BBF0CA /* Darude_Sandstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Darude_Sandstorm.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9523F841F63273400BBF0CA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +111,7 @@
 				D94738C41F5F3B28003D8E99 /* DongleBoisLab1Tests */,
 				D94738CF1F5F3B28003D8E99 /* DongleBoisLab1UITests */,
 				D94738A91F5F3B28003D8E99 /* Products */,
+				D9523F821F63273400BBF0CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,15 +142,16 @@
 				D94738E81F5F3CA4003D8E99 /* TableViewController.m */,
 				D94738B41F5F3B28003D8E99 /* Main.storyboard */,
 				68F701361F60B68D00C5D0A3 /* KitchenSink.h */,
+				68F701371F60B68D00C5D0A3 /* KitchenSink.m */,
 				0277196B1F630C24000DA779 /* PickerTimerViewController.h */,
 				0277196C1F630C24000DA779 /* PickerTimerViewController.m */,
-				68F701371F60B68D00C5D0A3 /* KitchenSink.m */,
+				683F26EE1F6308ED00E5ED8D /* TimerViewController.h */,
+				683F26EF1F6308ED00E5ED8D /* TimerViewController.m */,
+				D9523F851F63275000BBF0CA /* Darude_Sandstorm.mp3 */,
 				D94738B71F5F3B28003D8E99 /* Assets.xcassets */,
 				D94738B91F5F3B28003D8E99 /* LaunchScreen.storyboard */,
 				D94738BC1F5F3B28003D8E99 /* Info.plist */,
 				D94738AB1F5F3B28003D8E99 /* Supporting Files */,
-				683F26EE1F6308ED00E5ED8D /* TimerViewController.h */,
-				683F26EF1F6308ED00E5ED8D /* TimerViewController.m */,
 			);
 			path = DongleBoisLab1;
 			sourceTree = "<group>";
@@ -173,6 +180,14 @@
 				D94738D21F5F3B28003D8E99 /* Info.plist */,
 			);
 			path = DongleBoisLab1UITests;
+			sourceTree = "<group>";
+		};
+		D9523F821F63273400BBF0CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9523F831F63273400BBF0CA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +257,7 @@
 				TargetAttributes = {
 					D94738A71F5F3B28003D8E99 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = F69WJ27LN4;
+						DevelopmentTeam = X4EH946RXZ;
 						ProvisioningStyle = Automatic;
 					};
 					D94738C01F5F3B28003D8E99 = {
@@ -283,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D94738BB1F5F3B28003D8E99 /* LaunchScreen.storyboard in Resources */,
+				D9523F861F63275000BBF0CA /* Darude_Sandstorm.mp3 in Resources */,
 				D94738B81F5F3B28003D8E99 /* Assets.xcassets in Resources */,
 				D94738B61F5F3B28003D8E99 /* Main.storyboard in Resources */,
 			);
@@ -467,7 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F69WJ27LN4;
+				DEVELOPMENT_TEAM = X4EH946RXZ;
 				INFOPLIST_FILE = DongleBoisLab1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SMU.DongleBoisLab1;
@@ -479,7 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F69WJ27LN4;
+				DEVELOPMENT_TEAM = X4EH946RXZ;
 				INFOPLIST_FILE = DongleBoisLab1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SMU.DongleBoisLab1;

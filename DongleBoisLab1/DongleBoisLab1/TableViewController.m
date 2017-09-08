@@ -110,7 +110,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"TimerCell" forIndexPath:indexPath];
         
         // Configure the cell...
-        cell.textLabel.text = @"Timer";
+        cell.textLabel.text = @"Rave Mode  🎉";
         cell.detailTextLabel.text = @"more";
     }
     
